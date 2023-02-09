@@ -1,0 +1,183 @@
+.review
+    padding-top: 34rem
+    margin-bottom: 20rem
+    .container
+        display: flex
+        justify-content: space-between
+    .specialists-card_review
+        width: 118rem
+    &-side
+        width: 37.6rem
+        .faq-side
+            width: 100%
+            margin-bottom: 6rem
+        .license
+            width: 100%
+            height: fit-content
+    .reviews-slider__item_with-img
+        display: flex
+        flex-wrap: wrap
+    .reviews-slider__bottom
+        display: block
+    .reviews-slider__rating
+        margin-bottom: 2.5rem
+    .reviews-slider__heading-source
+        display: flex
+        align-items: center
+        &-img-ktm
+            width: 7.5rem
+            height: 4.5rem
+            margin-right: 2.5rem
+            img
+                height: 100%
+                object-fit: contain
+        &-img-pro-doctor
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 6rem
+            height: 6rem
+            margin-right: 2.5rem
+            border-radius: 50%
+            background: #F1F9FE
+            img
+                width: 3.5rem
+                height: 2.8rem
+                object-fit: contain
+        &-link
+            width: 17.8rem
+            font-weight: 600
+            font-size: 2rem
+            line-height: 130%
+            color: #036F8C
+            &:hover
+                text-decoration-line: underline
+    .reviews-slider__img,
+    .reviews-slider__video
+        height: 47.8rem
+        margin-bottom: 4.4rem
+    .reviews-slider__content
+        margin-bottom: 0
+    .reviews-slider__content:before 
+        display: none
+    .reviews-slider__item-text .reviews-slider__content:before 
+        display: block
+        bottom: -7rem
+        right: 14.6rem
+    .reviews-slider__description
+        font-weight: 400
+        font-size: 2.4rem
+        line-height: 130%
+        color: #6E7477
+        margin-bottom: 4rem
+    .reviews-slider__description-title
+        margin-bottom: 1.6rem
+        font-weight: 600
+        font-size: 2.4rem
+        line-height: 130%
+        color: #232C30
+    .specialists-card_review__content
+        margin-bottom: 8rem 
+    &__form
+        width: 94.7rem
+        &-title
+            margin-bottom: 4.4rem
+            font-family: 'Nobilis'
+            font-weight: 400
+            font-size: 4.8rem
+            line-height: 100%
+        .reviews-slider__rating
+            margin-bottom: 7.5rem
+        &_label
+            position: relative
+            width: 100%
+            display: block
+            margin-bottom: 5rem
+        &_input
+            padding: 1.7rem 2.3rem  
+            width: 100%
+            font-weight: 400
+            font-size: 1.6rem
+            line-height: 130%
+            color: #6E7477
+            background: #FFFFFF
+            border: 1px solid #F1F9FE
+            border-radius: 7.2rem
+            &:placeholder
+                font-weight: 400
+                font-size: 1.6rem
+                line-height: 130%
+                color: #6E7477
+        textarea
+            padding: 2.8rem 3.2rem  
+            border-radius: 3rem
+        &_text
+            position: absolute
+            left: 0
+            top: -3rem
+            font-weight: 500
+            font-size: 1.6rem
+            line-height: 130%
+
+.review__form__rating
+  position: relative
+  font-size: 2.5rem
+  letter-spacing: 2rem
+  display: inline-block
+
+
+.review__form__rating::before 
+  content: '★★★★★'
+  opacity: 0
+  margin-right: 3rem
+
+.review__form__rating-items
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  display: flex
+  flex-direction: row-reverse
+  overflow: hidden
+
+
+
+.review__form__rating-star 
+  position: absolute
+  top: 0
+  left: 0
+  width: 0
+  height: 0
+  opacity: 0
+  visibility: hidden
+
+
+.review__form__rating-star:checked,
+.review__form__rating-star:checked ~ .review__form__rating-label 
+  -webkit-text-fill-color: #E6644D
+  color: #E6644D
+  -webkit-text-stroke: 0.1rem #E6644D
+ 
+
+
+.review__form__rating-label 
+  flex: 0 0 20%
+  height: 100%
+  cursor: pointer
+  text-transform: uppercase
+  -webkit-text-fill-color: transparent
+  -webkit-text-stroke: 0.1rem #6E7477
+
+
+.review__form__rating-label::before 
+  content: '★'
+  display: block
+  transition: color 0.3s ease 0s
+
+.review__form__rating-label:hover,
+.review__form__rating-label:hover ~ .review__form__rating-label,
+.review__form__rating-label:checked ~ .review__form__rating-label:hover 
+  color: #E6644D
+  -webkit-text-fill-color: #E6644D
+  -webkit-text-stroke: 0.1rem #E6644D

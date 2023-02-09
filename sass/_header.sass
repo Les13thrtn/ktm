@@ -1,0 +1,163 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 100
+  &-top
+    background: #F2F6F8
+    position: relative
+    z-index: 1
+  &-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: .9rem 0
+    border-bottom: 1px solid rgba(3, 98, 126, 0.2)
+  &-logo
+    width: 21.2rem
+    flex-shrink: 0
+    margin-right: 2rem
+  &-place
+    display: flex
+    align-items: center
+    font-size: 2.4rem
+    img
+      width: 3.2rem
+      flex-shrink: 0
+      margin-right: 1.6rem
+    span
+      text-decoration: underline
+  &-phone
+    display: inline-block
+    font-size: 2.8rem
+    font-weight: 600
+  &-info
+    font-size: 1.6rem
+    color: $gray
+  &-whatsapp
+    width: 6rem
+    flex-shrink: 0
+    filter: drop-shadow(.4rem .2rem .5rem rgba(143, 205, 230, 0.36))
+    margin-right: -1.5rem
+  &-btn
+    .btn-link
+      height: 6.2rem
+      clip-path: polygon(100% 0, 100% 66%, calc(100% - 2.1rem) 100%, 0 100%, 0 0)
+      padding: 0 3.4rem
+
+  &-bottom
+    background: #F2F6F8
+    &__content
+      display: flex
+      justify-content: space-between
+      align-items: center
+  &-list
+    display: flex
+    align-items: center
+    > li
+      font-size: 2rem
+      font-weight: 500
+      &:not(:last-child)
+        margin-right: 4.5rem
+      // &.active
+      &.sublist
+        position: relative
+        &:first-child
+          .header-dropdown__body
+            padding-right: 8.3rem
+        > a
+          padding-right: 2.3rem
+          &::after
+            content: ''
+            position: absolute
+            top: 50%
+            right: 0
+            transform: translateY(-50%)
+            width: 1.3rem
+            height: .8rem
+            background: url(../img/arrow.svg) 50% / contain no-repeat
+            transition: transform .25s
+        &.active
+          > a
+            &::after
+              transform: translateY(-50%) rotate(-180deg)
+      > a
+        display: inline-block
+        padding: 2rem 0
+        transition: color .25s
+        position: relative
+  &-dropdown
+    display: none
+    position: absolute
+    top: 100%
+    left: -13rem
+    border-top: .5rem solid transparent
+    z-index: -1
+    &__body
+      padding: 4rem 4rem 4rem
+      background: #F2F6F8
+      border-radius: 0 0 4rem 4rem
+      box-shadow: .5rem .5rem 1rem rgba(187, 195, 199, 0.23)
+    &__content
+      display: flex
+    &__list
+      width: 41.2rem
+      position: relative
+      flex-shrink: 0
+      margin-right: 9rem
+      li
+        display: flex
+        align-items: center
+        font-size: 2rem
+        font-weight: 500
+        padding: 0 5rem 0 2.3rem
+        position: relative
+        cursor: pointer
+        transition: all .25s
+        &::after
+          content: ''
+          position: absolute
+          top: 50%
+          right: 2.5rem
+          transform: translateY(-50%)
+          width: 1.3rem
+          height: .8rem
+          background: url(../img/arrow-sublist.svg) 50% / contain no-repeat
+          transition: all .25s
+        &.active
+          padding-top: 1.2rem
+          padding-bottom: 1.2rem
+          background: #F6FAFB
+          border-radius: 6rem
+          box-shadow: .5rem .5rem 1rem rgba(187, 195, 199, 0.23), -.5rem -.5rem 1rem #FAFBFF
+          &::after
+            transform: translateY(-50%) rotate(-90deg)
+        &:not(:last-child)
+          margin-bottom: 3.4rem
+    &__sublist
+      // &-wrap
+      &-inner
+        display: none
+        &.active
+          display: flex
+      &-group
+        width: 45.8rem
+        background: #F6FAFB
+        padding: 1.4rem 2.6rem 2rem
+        border-radius: 2rem
+        box-shadow: .5rem .5rem 1rem rgba(187, 195, 199, 0.23), -.5rem -.5rem 1rem #FAFBFF
+        &:not(:last-child)
+          margin-right: 4rem
+      &-title
+        font-size: 2rem
+        font-weight: 500
+        color: $red
+        margin-bottom: 2.8rem
+      li
+        font-size: 1.8rem
+        font-weight: 400
+        line-height: 1.3
+        color: $gray
+        &:not(:last-child)
+          margin-bottom: 1.16rem

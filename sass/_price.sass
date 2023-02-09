@@ -1,0 +1,262 @@
+.price
+  margin-bottom: 20.4rem
+  &-title
+    margin-bottom: 9rem
+  &__title-min
+    margin-bottom: 6rem
+  &-heading
+    margin-bottom: 9.8rem
+    position: relative
+  &-slider
+    &__item
+      width: 51.1rem
+      padding-top: 2.3rem
+      &:not(:last-child)
+        margin-right: 2.3rem
+      &:nth-child(3n+2)
+        .price-slider
+          &__inner
+            background: #B3E0EC
+            justify-content: flex-start
+          &__text
+            width: 60%
+            margin-top: 2.5rem
+      &:nth-child(3n+3)
+        .price-slider
+          &__inner
+            background: #C5D1D8
+            justify-content: center
+            &::after
+              content: ''
+              position: absolute
+              bottom: 2.6rem
+              right: 9.8rem
+              width: 10rem
+              height: 10rem
+              background: url(../img/med-info.svg) 50% / contain no-repeat
+          &__text
+            width: min-content
+            margin-top: 2.5rem
+            &-description
+              width: 50%
+          &__number
+            z-index: -2
+            &-text
+              font-size: 4.8rem
+    &__inner
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      width: 100%
+      height: 28.3rem
+      padding: 2rem 3.5rem
+      border: 1px solid #fff
+      border-radius: 4rem
+      background: #E7B3AA
+      box-shadow: .5rem .5rem 1rem rgba(187, 195, 199, 0.23), -.5rem -.5rem 1rem #FAFBFF
+      position: relative
+      z-index: 1
+      margin-bottom: 2.6rem
+    &__img
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+      z-index: -1
+    &__star
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translate(-50%, -55%)
+      width: 4.5rem
+      height: 4.5rem
+      border-radius: 50%
+      background: #F6FAFB
+      display: flex
+      justify-content: center
+      align-items: center
+      img
+        width: 3rem
+    &__text
+      color: #fff
+      width: 54%
+      &-description
+        font-size: 1.8rem
+        font-weight: 500
+    &__number
+      display: flex
+      align-items: flex-end
+      margin-bottom: 3rem
+      position: relative
+      &-img
+        width: auto
+        height: 6.2rem
+        filter: drop-shadow(0 .4rem 1.5rem rgba(186, 141, 129, 0.44))
+        img
+          width: auto
+          height: 100%
+      &-text
+        font-size: 3.6rem
+        font-weight: 500
+        line-height: 1
+        margin-left: 1rem
+    &__title
+      font-size: 3.6rem
+      +nob
+      line-height: .97
+      color: $primary
+      margin-bottom: 2rem
+    &__description
+      font-size: 1.6rem
+      font-weight: 500
+      color: $gray
+  &-content
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 1.4rem
+  &-item
+    position: relative
+    width: 49.3%
+    z-index: 1
+    margin-bottom: 4rem
+    &__inner
+      display: flex
+      flex-direction: column
+      width: 100%
+      padding: 4.9rem 4rem 5rem 9.3rem
+      background: rgba(179, 224, 236, 0.4)
+      border-radius: 4rem
+      box-shadow: .5rem .5rem 1rem rgba(187, 195, 199, 0.23), -.5rem -.5rem 1rem #FAFBFF
+      position: relative
+      overflow: hidden
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        top: -2.9rem
+        left: -1rem
+        width: 9.2rem
+        height: 9.2rem
+        border-radius: 50%
+        border: 1px solid rgba(179, 224, 236, 0.4)
+        background: #F2F6F8
+        z-index: 1
+      &::after
+        content: ''
+        position: absolute
+        inset: 1px
+        border-radius: inherit
+        background: #fff
+        z-index: -1
+    &__img
+      position: absolute
+      top: -2rem
+      left: 0
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 7.2rem
+      height: 7.2rem
+      border-radius: 50%
+      background: linear-gradient(203.53deg, #036F8C 6.13%, #1372A8 90.73%)
+      box-shadow: inset 1px 1px .6rem rgba(255, 255, 255, 0.6)
+      z-index: 2
+      img
+        width: 3.6rem
+    &__heading
+      min-height: 7.3rem
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      margin-bottom: 3.6rem
+    &__title
+      width: 60%
+      font-size: 2.8rem
+      font-weight: 600
+      line-height: 1.3
+    &__cost
+      font-size: 4.8rem
+      font-weight: 500
+      span
+        font-size: 2.4rem
+    &__dropdown
+      display: none
+      margin-bottom: 1rem
+    &__description
+      font-size: 1.8rem
+      color: $gray
+    &__bottom
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 2.4rem
+    &__more
+      font-size: 2.4rem
+      font-weight: 500
+      color: $gray
+      display: flex
+      align-items: center
+      &.active
+        svg
+          transform: rotate(-180deg)
+      svg
+        width: 2.1rem
+        height: auto
+        flex-shrink: 0
+        margin-left: 1.7rem
+        transition: all .25s
+  &-bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-right: 5.2rem
+    position: relative
+    &__banner
+      display: flex
+      width: 77.1%
+      align-items: center
+      padding: 0.9rem 25rem .9rem .7rem
+      background: linear-gradient(90.66deg, #FFFFFF 2.52%, #ECF3F8 107.32%)
+      border-radius: 10rem
+      box-shadow: 0 .4rem 2.5rem rgba(179, 224, 236, 0.2)
+      position: relative
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        inset: .2rem
+        background: #F6FAFB
+        border-radius: inherit
+        z-index: -1
+      &-img
+        width: 8.6rem
+        height: 8.6rem
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        border: .6rem solid #fff
+        background: $primary
+        box-shadow: inset .5rem .5rem 1rem #013E54
+        margin-right: 3.4rem
+        img
+          width: 3rem
+      &-title
+        font-size: 2.4rem
+        font-weight: 500
+        margin-bottom: .8rem
+      &-description
+        font-size: 1.6rem
+        font-weight: 500
+      &-btn
+        position: absolute
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+  &-button
+    &-prev, &-next
+      top: 15.5rem

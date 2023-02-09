@@ -1,0 +1,103 @@
+.team
+    margin-bottom: 20rem
+    &__title
+        margin-bottom: 6.4rem
+    &__content
+        display: flex
+        flex-wrap: wrap
+    &__content__card
+        margin-bottom: 5rem
+        box-shadow: 0rem .4rem 2.5rem rgba(179, 224, 236, 0.2)
+    &__content__card:not(:nth-child(4n))
+        margin-right: 2.4rem
+    &__pagination
+        display: flex
+        width: fit-content
+        margin-left: auto
+    &__pagination_arrow
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 3.2rem
+        height: 3.2rem
+        background: #FFFFFF
+        border-radius: 50%
+        cursor: pointer
+        img
+            width: 1.1rem
+            height: 0.6rem
+    &__pagination_arrow-prev
+        margin-right: 1.6rem
+        img
+            transform: rotate(90deg)
+    &__pagination_arrow-next
+        margin-left: 1.6rem
+        img
+            transform: rotate(-90deg)
+    &__pagination_pages
+        position: relative
+        margin-top: 1.6rem
+        display: flex
+        align-items: center
+    &__pagination_pages::before
+        position: absolute
+        content: ''
+        height: 0.1rem
+        width: 80%
+        top: -.1rem
+        left: 1rem
+        background: #FFFFFF
+    &__pagination_item
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 3rem
+        height: 3.6rem
+        position: relative
+        padding-top: 2rem
+        margin-right: 2.6rem
+        font-weight: 500
+        font-size: 2rem
+        line-height: 135%
+        color: #C5D1D8
+        cursor: pointer
+    &__pagination_dots
+        margin-right: 1rem
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: 2rem
+        width: 1.4rem
+        height: 3.6rem
+        font-weight: 500
+        font-size: 2rem
+        line-height: 135%
+        color: #C5D1D8
+    &__pagination_item:last-child
+        margin-right: 0rem
+    &__pagination_item._active
+        font-weight: 600
+        font-size: 2.8rem
+        line-height: 100%
+        color: #B3E0EC
+        transition: .2s
+    &__pagination_item::before
+        position: absolute
+        top: -.4rem
+        left: 30%
+        content: ''
+        width: 0.8rem
+        height: 0.8rem
+        background: #C5D1D8
+        border: 1px solid #FFFFFF
+        border-radius: 50%
+    &__pagination_item._active::before
+        top: -.8rem
+        left: 18%
+        width: 1.6rem
+        height: 1.6rem
+        background: #B3E0EC
+        transition: .2s
+
+        
+        

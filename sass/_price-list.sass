@@ -1,0 +1,190 @@
+.price-list
+    margin-bottom: 20rem
+    &__title
+        margin-bottom: 6.4rem
+    .faq-item
+        &__heading
+            background: #FFFFFF
+            box-shadow: .5rem .5rem 1rem rgba(187, 195, 199, 0.23), -.5rem -.5rem 1rem #FAFBFF
+            &_info
+                display: flex
+                align-items: center
+                margin-left: 10rem
+            &_duration
+                margin-right: 3rem
+                font-weight: 500
+                font-size: 2.4rem
+                line-height: 130%
+                color: #E6644D
+            &_price
+                font-weight: 500
+                font-size: 2.4rem
+                line-height: 130%
+        &__icon
+            margin-right: 2rem
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 7.2rem
+            height: 7.2rem
+            background: linear-gradient(203.53deg, #036F8C 6.13%, #1372A8 90.73%)
+            box-shadow: inset .1rem .1rem .6rem rgba(255, 255, 255, 0.6)
+            border-radius: 50%
+            img
+                height: 3.6rem
+                width: 3.6rem
+                object-fit: contain
+        &__info
+            display: flex
+            align-items: center
+        &__name
+            font-family: 'Montserrat'
+            font-weight: 600
+            font-size: 2.8rem
+            line-height: 130%
+        .faq-item__dropdown
+            margin-top: -6rem
+            &-inner
+                display: block
+            &_item
+                width: 100%
+                display: flex
+                justify-content: space-between
+                padding: 2.6rem 11.6rem 
+                background: #F1F9FE
+                box-shadow: inset .5rem .5rem 1rem rgba(168, 187, 194, 0.23), inset -.5rem -.5rem 1rem #FFFFFF
+                &_name
+                    margin-right: 2rem
+                    width: 25rem
+                    font-family: 'Montserrat'
+                    font-weight: 500
+                    font-size: 1.8rem
+                    line-height: 130%
+                &_info
+                    max-width: 91.2rem
+                    font-family: 'Montserrat'
+                    font-weight: 400
+                    font-size: 1.8rem
+                    line-height: 130%
+                    color: #6E7477
+                &_price
+                    text-align: right
+                    width: 15rem    
+                    font-family: 'Montserrat'
+                    font-weight: 500
+                    font-size: 2.4rem
+                    line-height: 130%
+            &_item:last-child
+                border-radius: 0 0 4rem 4rem
+            &_item:first-child
+                padding-top: 9.4rem
+            &_top
+                padding: 9.5rem 10.6rem 2.8rem 10.6rem
+                background: #F1F9FE
+                box-shadow: inset .5rem .5rem 1rem rgba(168, 187, 194, 0.23), inset -.5rem -.5rem 1rem #FFFFFF;
+                &-items
+                    display: flex
+                    margin-bottom: 6rem
+                &-price
+                    margin-right: 22rem
+                    padding: 2rem 6rem
+                    background: #B3E0EC
+                    box-shadow: .5rem .5rem 1rem rgba(187, 195, 199, 0.23), -.5rem -.5rem 1rem #FAFBFF
+                    border-radius: 100rem
+                    &-heading
+                        margin-bottom: 0.5rem
+                        font-weight: 400
+                        font-size: 1.8rem
+                        line-height: 130%
+                        color: #6E7477
+                    &-value
+                        font-weight: 600
+                        font-size: 2.8rem
+                        line-height: 130%
+                        color: #036F8C
+                &-duration
+                    padding: 2rem 6rem
+                    background: #E7B3AA
+                    box-shadow: .5rem .5rem 1rem rgba(187, 195, 199, 0.23), -.5rem -.5rem 1rem #FAFBFF
+                    border-radius: 100rem
+                    &-heading
+                        margin-bottom: 0.5rem
+                        font-weight: 400
+                        font-size: 1.8rem
+                        line-height: 130%
+                        color: #FFFFFF
+                    &-value
+                        font-weight: 600
+                        font-size: 2.8rem
+                        line-height: 130%
+                        color: #E6644D
+                &-head
+                    font-weight: 600
+                    font-size: 2.4rem
+                    line-height: 130%
+            &_lists
+                padding: 2.8rem 12.5rem 5.9rem 12.5rem
+                background: #F1F9FE
+                box-shadow: inset .5rem .5rem 1rem rgba(168, 187, 194, 0.23), inset -.5rem -.5rem 1rem #FFFFFF;
+                border-radius: 0px 0px 4rem 4rem
+                &-list
+                    &_heading
+                        margin-bottom: 3.5rem
+                        font-weight: 500
+                        font-size: 2.4rem
+                        line-height: 130%
+                        span
+                            margin-right: 2.7rem
+                            font-weight: 600
+                            font-size: 6rem
+                    &-item
+                        margin-left: 4rem
+                        margin-bottom: 4rem     
+                        li
+                            position: relative
+                            font-family: 'Gilroy'
+                            font-weight: 500
+                            font-size: 1.8rem
+                            line-height: 250%
+                            color: #6E7477
+                            &::before
+                                content: ''
+                                position: absolute
+                                left: -2.8rem
+                                top: 50%
+                                transform: translateY(-50%)
+                                width: 1.2rem
+                                height: 1.2rem
+                                border-radius: 50%
+                                border: .2rem solid #fff
+                                background: $primary
+                                box-shadow: .4rem .4rem .4rem rgba(132, 156, 167, 0.44)
+                            &:nth-child(2n)
+                                &::before
+                                    background: $red
+                .faq-item__dropdown_lists-btn
+                   background: none
+        &__close
+            opacity: 0
+            pointer-events: none
+            margin-top: -2rem
+            margin-left: auto
+            width: fit-content
+            display: flex
+            align-items: center
+            cursor: pointer
+            &_text
+                margin-right: 1.2rem
+                font-weight: 400
+                font-size: 1.8rem
+                line-height: 130%
+                color: #E6644D
+            &_icon
+                width: 1.1rem
+                height: 0.6rem
+                object-fit: contain
+        &__close._active
+            opacity: 1
+            margin-top: 2.9rem
+            pointer-events: all
+            transition: 1s

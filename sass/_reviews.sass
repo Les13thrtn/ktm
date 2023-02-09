@@ -1,0 +1,158 @@
+.reviews
+  margin-bottom: 20rem
+  &-heading
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 7rem
+  &-title
+    margin-bottom: 0
+  &-slider
+    &__item
+      display: flex
+      flex-direction: column
+      width: 51.1rem
+      height: auto
+      padding: 4.5rem 4.4rem 4.4rem
+      background: #fff
+      border-radius: 4rem
+      box-shadow: .5rem .5rem 1rem rgba(187, 195, 199, 0.23), -.5rem -.5rem 1rem #FAFBFF
+      &:not(:last-child)
+        margin-right: 2.3rem
+    &__heading
+      display: flex
+      justify-content: space-between
+      margin-bottom: 2.3rem
+    &__text
+      width: 70%
+    &__title
+      font-size: 1.6rem
+      color: $red
+      margin-bottom: .5rem
+    &__name
+      font-size: 2.8rem
+      font-weight: 600
+      line-height: 1.3
+      margin-bottom: .9rem
+    &__relative
+      font-size: 1.8rem
+    &__link
+      flex-direction: column-reverse
+      justify-content: space-between
+      align-items: flex-end
+      font-size: 1.8rem
+    &__content
+      margin-bottom: 4rem
+      flex-grow: 1
+      position: relative
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        bottom: -6rem
+        right: -3.4rem
+        width: 20.3rem
+        height: 20.1rem
+        background: url(../img/quote.svg) 50% / contain no-repeat
+        z-index: -1
+    &__description
+      font-size: 1.8rem
+      font-weight: 500
+      line-height: 1.28
+    &__img
+      width: 100%
+      height: 34.5rem
+      // height: 100%
+      border-radius: 4rem
+      position: relative
+      overflow: hidden
+      > img
+        +cover
+      &-zoom
+        position: absolute
+        bottom: 4rem
+        right: 4rem
+        width: 6rem
+        height: 6rem
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        background: linear-gradient(127.77deg, #B3E0EC 18.55%, rgba(255, 255, 255, 0) 103.65%)
+        z-index: 1
+        cursor: pointer
+        &::before
+          content: ''
+          position: absolute
+          inset: 1px
+          border-radius: inherit
+          background: #B3E0EC
+          z-index: -1
+          box-shadow: inset .25rem .25rem 1rem rgba(168, 187, 194, 0.23), inset -.25rem -.25rem .5rem #FFFFFF
+        img
+          width: 2.4rem
+    &__video
+      width: 100%
+      height: 34.5rem
+      // height: 100%
+      border-radius: 4rem
+      position: relative
+      overflow: hidden
+      > img
+        +cover
+      &-play
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 7.6rem
+        height: 7.6rem
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        background: rgba(255, 255, 255, 0.31)
+        z-index: 1
+        &::before
+          content: ''
+          position: absolute
+          inset: .5rem
+          border-radius: inherit
+          background: #B3E0EC
+          box-shadow: inset .5rem .5rem 1rem #D2E9EF
+          z-index: -1
+        img
+          width: 2.4rem
+          margin-left: .8rem
+    &__bottom
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+    &__rating
+      &-text
+        font-size: 1.6rem
+        color: $gray
+        margin-bottom: 1.3rem
+      &-item
+        width: 4.5rem
+        height: 4.5rem
+        border-radius: 50%
+        background: #F6FAFB
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        // filter: drop-shadow(.5rem .5rem 1rem rgba(187, 195, 199, 0.23)) drop-shadow(-.5rem -.5rem 1rem #FAFBFF)
+        filter: drop-shadow(.25rem .25rem .5rem rgba(187, 195, 199, 0.23)) drop-shadow(-.25rem -.15rem .5rem #FAFBFF)
+        &s
+          display: flex
+          align-items: center
+        img
+          width: 3rem
+          // filter: drop-shadow(.5rem .5rem 1rem rgba(230, 100, 77, 0.23)) drop-shadow(-.5rem -.5rem 1rem #FAFBFF)
+          filter: drop-shadow(.25rem .25rem .5rem rgba(187, 195, 199, 0.23)) drop-shadow(-.25rem -.15rem .5rem #FAFBFF)
+        &:not(:last-child)
+          margin-right: 2rem
+    &__date
+      font-size: 1.8rem
+      color: $gray
